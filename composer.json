@@ -1,12 +1,12 @@
 {
-  "name": "codedgr/cache",
-  "description": "Cache to memory or database",
+  "name": "codedgr/memory",
+  "description": "Store your data in ram, database, session and cookie.",
   "keywords": [
-    "cache","memory","database"
+    "cache","memory","database","cookie"
   ],
   "license": "MIT",
   "type": "library",
-  "homepage": "https://github.com/codedgr/cache",
+  "homepage": "https://github.com/codedgr/memory",
   "authors": [
     {
       "name": "Coded Ltd",
