@@ -20,7 +20,7 @@ class Ram extends AbstractMemory
 
     public function getMemory(string $key)
     {
-        if (!$this->exists($key)) return false;
+        if (!$this->exists($key)) return null;
 
         if (is_object($this->cache[$key]))
             return clone $this->cache[$key];
@@ -30,7 +30,7 @@ class Ram extends AbstractMemory
 
     public function deleteMemory(string $key)
     {
-        if (!$this->exists($key)) return false;
+        if (!$this->exists($key)) return null;
         unset($this->cache[$key]);
         unset($this->expire[$key]);
         return true;
