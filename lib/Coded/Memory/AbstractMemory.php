@@ -61,7 +61,7 @@ abstract class AbstractMemory
 
         $found = false;
         $var->misses += 1;
-        return false;
+        return null;
     }
 
     static function delete(string $key)
