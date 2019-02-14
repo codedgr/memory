@@ -19,8 +19,8 @@ class Cookie
         return static::set($key, $data, $expire);
     }
 
-    static function get(string $key, &$found = null){
-        if(!isset($_COOKIE[$key])) return $found = false;
+    static function get(string $key, &$found = false){
+        if(!isset($_COOKIE[$key])) return null;
         $found = true;
         return unserialize($_COOKIE[$key]);
     }
