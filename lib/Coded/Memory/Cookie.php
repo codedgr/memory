@@ -10,8 +10,7 @@ class Cookie
     }
 
     static function set(string $key, $data, int $expire = 0){
-        setcookie($key, serialize($data), $expire, '/');
-        return true;
+        return setcookie($key, serialize($data), $expire, '/');
     }
 
     static function replace(string $key, $data, int $expire = 0){
