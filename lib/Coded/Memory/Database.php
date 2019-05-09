@@ -13,7 +13,7 @@ class Database extends AbstractMemory
     function __construct(\PDO $pdo)
     {
         $this->pdo = $pdo;
-        $this->table = defined('DATABASE_CACHE_TABLE') ? 'DATABASE_CACHE_TABLE' : 'cache';
+        $this->table = defined('DATABASE_CACHE_TABLE') ? DATABASE_CACHE_TABLE : 'cache';
     }
 
     function createTable()
